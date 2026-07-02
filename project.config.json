@@ -1,0 +1,15 @@
+{
+  "compileType": "miniprogram",
+  "libVersion": "3.8.0",
+  "appid": "",
+  "projectname": "miniprogram-7",
+  "setting": {
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "minifyWXSS": true,
+    "minifyWXML": true
+  },
+  "condition": {}
+}
