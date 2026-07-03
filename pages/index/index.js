@@ -4,7 +4,8 @@ Page({
     name: 'justin',
     age: 19,
     userinfo: { name: 'lqz', hobby: '烫头' },
-    names: ['刘亦菲', '迪丽热巴', '古力娜扎', '马儿咋哈']
+    names: ['刘亦菲', '迪丽热巴', '古力娜扎', '马儿咋哈'],
+    goodsList:[{id:1001,name:'钢笔',price:9},{id:1002,name:'铅笔',price:6},{id:1003,name:'脸盆',price:99}]
   },
 
   handleAddAge() {
