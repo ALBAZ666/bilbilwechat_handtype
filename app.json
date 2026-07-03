@@ -3,33 +3,35 @@
     "pages/index/index",
     "pages/my/my",
     "pages/login/login"
-  ],
-  "window": {
+],
+"window": {
     "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#0000FF",
     "enablePullDownRefresh": true,
-    "backgroundColor": "#00ffff",
-    "backgroundTextStyle": "dark"
-  },
+    "backgroundColor": "#00FFFF",
+    "backgroundTextStyle": "light"
+},
+
+  "tabBar": {
+    "selectedColor": "#b4282d",
+    "position": "bottom",
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "images/home.png",
+            "selectedIconPath": "images/home_select.png"
+        },
+        {
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/my_select.png"
+        }
+    ]
+},
+
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents",
-  "tabBar": {
-    "selectedColor":"#b4282d",
-    "position":"bottom",
-    "list":[
-      {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"images/icon-home.png",
-        "selectedIconPath":"images/icon-home-active.png"
-      },
-      {
-        "pagePath":"pages/my/my",
-        "text":"我的",
-        "iconPath":"images/icon-report.png",
-        "selectedIconPath":"images/icon-report-active.png"
-      }
-    ]
-  }
+  "lazyCodeLoading": "requiredComponents"
 }

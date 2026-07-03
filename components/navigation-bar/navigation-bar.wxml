@@ -1,6 +1,0 @@
-<view class="nav-bar" style="background-color: {{background}};">
-  <view class="nav-status-bar" style="height: {{statusBarHeight}}px;"></view>
-  <view class="nav-content" style="height: {{navBarHeight}}px;">
-    <view class="nav-title">{{title}}</view>
-  </view>
-</view>

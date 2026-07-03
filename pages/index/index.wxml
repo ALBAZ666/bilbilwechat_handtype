@@ -1,55 +1,17 @@
 <!--index.wxml-->
-<text>首页</text>
 
-<view style="height: 300rpx; width: 750rpx;background-color: pink ;"></view>
-
-<view class="myview">我是个view</view>
-
-<button size="mini" type="default" plain class="mybutton">我是个按钮</button>
-<button size="mini" type="warn" plain>我是个按钮</button>
-<button size="mini" type="primary" plain>我也许是个按钮</button>
-
-
-<swiper
-autoplay
-indicator-dots
-indicator-color='#0000FF'
-interval='3000'
->
-  <swiper-item>
-    <image src="/images/scenery-01.png" mode="widthFix"/>
-  </swiper-item>
-  <swiper-item>
-    <image src="/images/scenery-02.png" mode="widthFix"/>
-  </swiper-item>
-  <swiper-item>
-    <image src="/images/scenery-03.png" mode="widthFix"/>
-  </swiper-item>
-  <swiper-item>
-    <image src="/images/scenery-01.png" mode="widthFix"/>
-  </swiper-item>
-</swiper>
-<view class="tips">
-<text>欢迎使用我们的系统,谢谢~~</text>
+<view>
+  <view>姓名是：{{name}}</view>
+  <view>年龄是：{{age}}</view>
+  <button type="primary" bind:tap="handleAddAge">点我年龄+1</button>
 </view>
 
-<view class="menu">
-<view class="item">
-<image src="/images/icon-report-active.png" mode="scaleToFill"/>
-<text class="title">物业合同</text>
-</view>
-</view>
+<view>------显示对象------</view>
+<view>{{userinfo.name}}</view>
+<view>{{userinfo.hobby}}</view>
+<button type="primary" bind:tap="handleChangeHobby">变化爱好</button>
 
-<view class="notice">
-<image src="/images/icon-report-active.png" mode="scaleToFill" style="width:200rpx;height:100rpx"/>
-</view>
+<view>------循环数组打印名字------</view>
 
-<view class="bottom">
-  <view>
-     <image src="/images/icon-report.png" mode="scaleToFill"/>
-     </view>
-     <view>
-      <image src="/images/scenery-03.png" mode="scaleToFill"/>
-     </view>
-     <view></view>
-</view>
+<view wx:for="{{names}}">{{item}}</view>
+<button type="primary" bind:tap="handleAddName">增加人名</button>
