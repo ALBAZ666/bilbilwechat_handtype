@@ -12,3 +12,7 @@
 
 </view>
 
+<view>======事件对象和传参数======</view>
+
+<view band:tap="handleChick01" data-id='1001'data-data-name='justin'mark:name='xxx' >点我</view>
+

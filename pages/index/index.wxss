@@ -43,3 +43,31 @@ border-radius: 10rpx;
 margin-top: 12rpx;
 font-size: 24rpx;
 } 
+.notice{
+display:flex;
+justify-content: flex-start;
+margin-top: 20rpx;
+margin-bottom: 20rpx;
+}
+
+.notice>text{
+  flex-grow: 1;
+  font-size: 40rpx;
+}
+.bottom{
+display: flex;
+justify-content: space-between;
+flex-wrap: 40rpx;
+}
+.bottom{
+display: flex;
+justify-content: space-between;
+flex-wrap;
+
+}
+.bottom>view>image{
+widows: 345rpx;
+padding: 10rpx;
+height: 200rpx;
+
+}
