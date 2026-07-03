@@ -18,12 +18,19 @@
 
 <view>--------------列表渲染------------</view>
 
-<view wx:for="{{goodsList}}"wx:key="index"wx:for-item='info'wx:for-index='i'><text>{{i}}-商品id:{{info.id}}--商品名字：{{info.name}}--商品价格：{{info.price}}</text>
+<view wx:for="{{goodsList}}" wx:key="index" wx:for-item="info" wx:for-index="i">
+  <text>{{i}}-商品id:{{info.id}}--商品名字：{{info.name}}--商品价格：{{info.price}}</text>
 </view>
 
-
-<view wx:for="{{goodsList}}"wx:key="index"wx:for-item='info'wx:for-index='i'><block>
-  
-{{i}}-商品id:{{info.id}}--商品名字：{{info.name}}--商品价格：{{info.price}}</block>
+<view wx:for="{{goodsList}}" wx:key="index" wx:for-item="info" wx:for-index="i">
+  <block>
+    {{i}}-商品id:{{info.id}}--商品名字：{{info.name}}--商品价格：{{info.price}}
+  </block>
 </view>
 
+<view>------条件渲染-------</view>
+<input type="text" model:value="{{score}}" style="border:1rpx solid red;" />
+<view wx:if="{{score >= 90 && score <= 100}}">优秀</view>
+<view wx:elif="{{score >= 80 && score < 90}}">良好</view>
+<view wx:elif="{{score >= 60 && score < 80}}">及格</view>
+<view wx:else>不及格</view>
