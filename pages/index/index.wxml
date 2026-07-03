@@ -5,9 +5,9 @@
 
 <view class="myview">我是个view</view>
 
-<button size="mini"type="default"plain class="mybutton">我是个按钮</button>
-<button size="mini"type="warn"plain>我是个按钮</button>
-<button size="mini"type="primary"plain>我也许是个按钮</button>
+<button size="mini" type="default" plain class="mybutton">我是个按钮</button>
+<button size="mini" type="warn" plain>我是个按钮</button>
+<button size="mini" type="primary" plain>我也许是个按钮</button>
 
 
 <swiper

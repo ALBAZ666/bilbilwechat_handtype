@@ -1,2 +1,6 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<text>登录页面</text>
+
+<navigator open-type="navigateBack" delta="2">
+<button>回退</button>
+</navigator>
